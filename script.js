@@ -1,0 +1,1 @@
+const p=document.querySelector('.progress');addEventListener('scroll',()=>p.style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+'%');const b=document.querySelector('#menu'),m=document.querySelector('#panel');b.onclick=()=>m.classList.toggle('open');document.querySelectorAll('.menuPanel a').forEach(a=>a.onclick=()=>m.classList.remove('open'));
